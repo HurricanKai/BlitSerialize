@@ -1,3 +1,3 @@
 # BlitSerialize
 
-A Libary to Quickly Layout, Read & Write your Objects
+A libary to quickly layout, read & write your objects
