@@ -38,6 +38,7 @@ namespace BlitSerialize
                         stack.Push(child);
                     }
             }
+            map.Root = typeInfo;
             map.Length = finalOffset;
             return map;
         }

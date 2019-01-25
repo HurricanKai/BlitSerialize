@@ -12,6 +12,7 @@ namespace BlitSerialize
     public class TypeMap : IEnumerable<NodeInfo>
     {
         public int Length { get; internal set; }
+        public NodeInfo Root { get; internal set; }
         public IEnumerable<NodeInfo> Nodes => _forward.Values;
 
 

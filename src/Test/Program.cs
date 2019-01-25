@@ -28,7 +28,10 @@ namespace Test
                     D = 100,
                 }
             };
-            var bytes = map.Serialize(val);
+            const bool bigEndian = true;
+            var bytes = map.Serialize(val, bigEndian);
+            var res = new TestType();
+            map.Deserialize(bytes, ref res, bigEndian);
         }
     }
 

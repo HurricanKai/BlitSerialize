@@ -115,7 +115,7 @@ namespace BlitSerialize
                     BinaryPrimitives.WriteInt32LittleEndian(result.Slice(offset), (Int32)value);
                 return;
             }
-            if (type == typeof(Int64))
+            if (type == typeof(Double))
             {
                 var val = BitConverter.DoubleToInt64Bits((Double)value);
                 if (bigEndian)
